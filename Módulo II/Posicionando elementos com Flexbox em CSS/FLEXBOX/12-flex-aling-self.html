@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Self</title>
+
+    <style>
+        .flex-container {
+            display: flex;
+            border: 1px solid black;
+            max-width: 400px;
+        }
+
+        .align-container {
+            align-items: center;
+        }
+
+        .item {
+            background-color: gray;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .center {
+            align-self: center;
+        }
+
+        .start {
+            align-self: flex-start;
+        }
+
+        .end {
+            align-self: flex-end;
+        }
+
+        .stretch {
+            align-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <p>Auto</p>
+    <section class="flex-container align-container">
+        <div class="item auto">AAAAA</div>
+        <div class="item auto">1234567</div>
+        <div class="item auto">Lore Ipsum Solum</div>
+        <div class="item auto">vrebwecewrbtrbtrtrn</div>
+    </section>
+    
+    <p>Variado</p>
+    <section class="flex-container">
+        <div class="item center">AAAAA</div>
+        <div class="item start">1234567</div>
+        <div class="item">Lore Ipsum Solum</div>
+        <div class="item end">vrebwecewrbtrbtrtrn</div>
+    </section>
+
+</body>
+</html>
